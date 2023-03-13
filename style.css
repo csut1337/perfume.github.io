@@ -1,0 +1,295 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* END CSS RESET */
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(30, 38%, 92%);
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  background-color: white;
+  max-height: fit-content;
+  max-width: 40rem;
+  border-radius: 1rem;
+  overflow: auto;
+  color: hsl(158, 36%, 37%);
+  margin: 1rem;
+}
+
+#perfume-img-desktop {
+  max-width: 22rem;
+  max-height: 100%;
+  translate: 0rem 0.1rem;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  /* max-width: 20rem; */
+  padding: 1.7rem;
+}
+
+#perfume {
+  font-size: 0.7rem;
+}
+
+.card-item {
+  padding: 0.5rem;
+}
+
+.add-button {
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  transition: 0.1s;
+  width: 15.5rem;
+  min-height: 3.5rem;
+  border-radius: 0.7rem;
+  border: none;
+  display: inline;
+  margin-top: 2.3rem;
+}
+
+.add-button:hover {
+  cursor: pointer;
+}
+
+.add-button:active {
+  background-color: hsl(158, 37%, 25%);
+}
+
+.button-items {
+  display: flex;
+  justify-content: center;
+}
+
+.button-items p {
+  padding-left: 1rem;
+}
+
+.fraunces-font {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+}
+
+.montserrat-font {
+  font-family: "montserrat", serif;
+}
+
+#description {
+  font-size: 14px;
+  line-height: 1.4rem;
+  padding-bottom: 1rem;
+}
+
+#big-price {
+  font-size: 2rem;
+  margin-right: 1.5rem;
+}
+
+#strikethrough {
+  text-decoration: line-through;
+  font-size: 0.8rem;
+}
+
+#title {
+  color: black;
+  font-size: 2.2rem;
+  margin-bottom: 0.6rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* //////////////////////////////////////////////////// */
+@media (max-width: 375px) {
+  body {
+    max-width: fit-content;
+  }
+
+  .card {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 20rem;
+  }
+
+  .card-info {
+    max-width: 20rem;
+    padding: 1.7rem;
+  }
+
+  .add-button {
+    width: 17.5rem;
+    margin-top: 1.2rem;
+  }
+
+  #description {
+    padding-bottom: 0.5rem;
+  }
+
+  #title {
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+  }
+}
+
+@media (min-width: 376px) {
+  body {
+    min-width: fit-content;
+  }
+
+  .card {
+    min-width: 40rem;
+    width: fit-content;
+  }
+
+  #perfume-img-desktop {
+    max-width: 20rem;
+  }
+}
